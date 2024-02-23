@@ -10,3 +10,4 @@ A (parody) social media site built around being the opposite of a social media s
 * Of course the above means quizzes/questions are given at certain intervals. 
 * Apparently the site recommends very specific actions based on the friendship/person
 * Extra: Have the site be able to follow your friends around the interwebs: see Drake's steam activity, Sally's Facebook usage time, Darren's Discord activity, Raru's LinkedIn work status 
+* Monetization: allow users to either pay for the service monthly, or choose what data is collected on them for ads: "Choose the following data collection examples you are ok with me using to send you customized ads and pay for your use on the platform. You have to choose enough to satisfy this number value. I'll let you know when it reaches zero."
