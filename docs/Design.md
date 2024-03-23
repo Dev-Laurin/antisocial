@@ -93,7 +93,7 @@ gitGraph
 ```
 
 ### Categories 
-BUGFIX 
-FEAT - new feature
-DOCS 
-REFACT - refactoring. For use if bugfix does not apply.
+* BUGFIX 
+* FEAT - new feature
+* DOCS 
+* REFACT - refactoring. For use if bugfix does not apply.
