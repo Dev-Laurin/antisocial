@@ -60,17 +60,40 @@ erDiagram
     USER ||--o{ POSTS : creates
 ```
 
-## Development branching 
+## Development Process
+1. Create an Issue
+2. Create a new branch with the issue# and category (clone from develop) : BUGFIX62
+3. Create PR to merge into develop
+4. Create PR to merge to main once features are confirmed (Github action will push to prod automatically on merge)
+
+### Branching 
 
 ```mermaid
-    gitGraph
-       commit
-       commit
-       branch develop
-       commit
-       commit
-       commit
-       checkout main
-       commit
-       commit
+---
+title: Example Git diagram
+---
+gitGraph
+   commit
+   commit
+   branch develop
+   checkout develop
+   commit
+   commit
+   branch BUGFIX62
+   checkout BUGFIX62
+   commit
+   checkout develop
+   merge BUGFIX62
+   commit
+   checkout main
+   merge develop
+   commit
+   commit
+
 ```
+
+### Categories 
+BUGFIX 
+FEAT - new feature
+DOCS 
+REFACT - refactoring. For use if bugfix does not apply.
