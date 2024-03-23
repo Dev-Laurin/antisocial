@@ -36,12 +36,12 @@ Resources:
       BuildMethod: makefile
 
   Users:
-    Type: AWS::Serverless::SimpleTable
+    Type: AWS::DynamoDB::Table
     Properties:
       PrimaryKey: id
       TableName: Users
   Posts:
-    Type: AWS::Serverless::SimpleTable
+    Type: AWS::DynamoDB::Table
     Properties:
       PrimaryKey: id
       TableName: Posts
