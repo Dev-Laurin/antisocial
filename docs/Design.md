@@ -9,8 +9,8 @@
 * Extra: Have the site be able to follow your friends around the interwebs: see Drake's steam activity, Sally's Facebook usage time, Darren's Discord activity, Raru's LinkedIn work status 
 * Monetization: allow users to either pay for the service monthly, or choose what data is collected on them for ads: "Choose the following data collection examples you are ok with me using to send you customized ads and pay for your use on the platform. You have to choose enough to satisfy this number value. I'll let you know when it reaches zero."
 
-## Example App usage Diagram
-
+## Example App usage Diagrams
+### Suggestions to remove friends
 ```mermaid
 sequenceDiagram
     participant Anti
@@ -26,6 +26,16 @@ sequenceDiagram
     Anti->>John: Do you only talk about work?
     John-->>Anti: Y-Yes...
     Anti->>John: Are you going to remove him from your friends list or should I?
+```
+### User Journey Diagram
+```mermaid
+journey
+    title User logs into App
+    section Just Logged In
+      Suggests user removes _ friends from list: 5: Me
+      Notifications about surveys to take: 1: Me
+    section Checks Trending Tab
+      Top posts from user's 'dislike' categories: 3: Me
 ```
 
 ## DB Diagrams
@@ -48,18 +58,6 @@ Post : int user_id
 ```mermaid
 erDiagram
     USER ||--o{ POSTS : creates
-```
-
-## User Journey Diagram
-
-```mermaid
-journey
-    title User logs into App
-    section Just Logged In
-      Suggests user removes _ friends from list: 5: Me
-      Notifications about surveys to take: 1: Me
-    section Checks Trending Tab
-      Top posts from user's 'dislike' categories: 3: Me
 ```
 
 ## Development branching 
