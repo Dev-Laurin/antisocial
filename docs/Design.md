@@ -13,16 +13,19 @@
 
 ```mermaid
 sequenceDiagram
-    participant Alice
+    participant Anti
     participant Bob
-    Alice->>John: Hello John, how are you?
-    loop HealthCheck
-        John->>John: Fight against hypochondria
+    Anti->>John: John, you haven't spoken to Bob since his work-i-versary last year.
+    John-->>Anti: I just don't message Bob on LinkedIn that often. I talk to him everyday at work though.
+    loop FriendCheck
+        John->>John: Is Bob a friend? Or just a co-worker?
     end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
+    Anti->>John: I know that. If I saw you browsing LinkedIn I would have assumed you were fired.
+    Anti->>John: You have no chats with Bob on your discord, which you frequent.
+    John-->>Anti: Yes, but I do talk to Bob at work daily. He's vital to my everyday.
+    Anti->>John: Do you only talk about work?
+    John-->>Anti: Y-Yes...
+    Anti->>John: Are you going to remove him from your friends list or should I?
 ```
 
 ## DB Diagrams
