@@ -9,25 +9,7 @@
 * Extra: Have the site be able to follow your friends around the interwebs: see Drake's steam activity, Sally's Facebook usage time, Darren's Discord activity, Raru's LinkedIn work status 
 * Monetization: allow users to either pay for the service monthly, or choose what data is collected on them for ads: "Choose the following data collection examples you are ok with me using to send you customized ads and pay for your use on the platform. You have to choose enough to satisfy this number value. I'll let you know when it reaches zero."
 
-## Example App usage Diagrams
-### Suggestions to remove friends
-```mermaid
-sequenceDiagram
-    participant Anti
-    participant Bob
-    Anti->>John: John, you haven't spoken to Bob since his work-i-versary last year.
-    John-->>Anti: I just don't message Bob on LinkedIn that often. I talk to him everyday at work though.
-    loop FriendCheck
-        John->>John: Is Bob a friend? Or just a co-worker?
-    end
-    Anti->>John: I know that. If I saw you browsing LinkedIn I would have assumed you were fired.
-    Anti->>John: You have no chats with Bob on your Discord, which you frequent.
-    John-->>Anti: Yes, but I do talk to Bob at work daily. He's vital to my everyday.
-    Anti->>John: Do you only talk about work?
-    John-->>Anti: Y-Yes...
-    Anti->>John: Are you going to remove him from your friends list or should I?
-```
-### User Journey Diagram
+## Example App usage Diagram
 ```mermaid
 journey
     title User logs into App
