@@ -1,11 +1,14 @@
-- [ideas](#ideas)
-- [Example App usage Diagram](#example-app-usage-diagram)
-- [DB Diagrams](#db-diagrams)
-  - [Tables](#tables)
-  - [Entity Relationship Diagram](#entity-relationship-diagram)
-- [Development Process](#development-process)
-  - [Branching](#branching)
-  - [Categories](#categories)
+# Design
+
+- [Design](#design)
+  - [ideas](#ideas)
+  - [Example App usage Diagram](#example-app-usage-diagram)
+  - [DB Diagrams](#db-diagrams)
+    - [Tables](#tables)
+    - [Entity Relationship Diagram](#entity-relationship-diagram)
+  - [Development Process](#development-process)
+    - [Branching](#branching)
+    - [Categories](#categories)
 
 
 ## ideas
