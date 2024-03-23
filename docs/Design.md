@@ -54,14 +54,12 @@ erDiagram
 
 ```mermaid
 journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 5: Me
+    title User logs into App
+    section Just Logged In
+      Suggests user removes _ friends from list: 5: Me
+      Notifications about surveys to take: 1: Me
+    section Checks Trending Tab
+      Top posts from user's 'dislike' categories: 3: Me
 ```
 
 ## Development branching 
