@@ -11,6 +11,7 @@
 
 ## Example App usage Diagram
 
+```mermaid
 sequenceDiagram
     participant Alice
     participant Bob
@@ -22,17 +23,21 @@ sequenceDiagram
     John-->>Alice: Great!
     John->>Bob: How about you?
     Bob-->>John: Jolly good!
+```
 
 
 ## DB Entity Relationship Diagram 
 
+```mermaid
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
 
 ## User Journey Diagram
 
+```mermaid
 journey
     title My working day
     section Go to work
@@ -42,9 +47,11 @@ journey
     section Go home
       Go downstairs: 5: Me
       Sit down: 5: Me
+```
 
 ## Development branching 
 
+```mermaid
     gitGraph
        commit
        commit
@@ -55,3 +62,4 @@ journey
        checkout main
        commit
        commit
+```
