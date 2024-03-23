@@ -14,7 +14,7 @@
 journey
     title User logs into App
     section Just Logged In
-      Suggests user removes _ friends from list: 5: Me
+      Suggests user removes _ friends: 5: Me
       Notifications about surveys to take: 1: Me
     section Checks Trending Tab
       Top posts from user's 'dislike' categories: 3: Me
