@@ -27,8 +27,24 @@ Resources:
       Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
         Variables:
           PARAM1: VALUE
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: Users
+        - DynamoDBCrudPolicy:
+            TableName: Posts 
     Metadata:
       BuildMethod: makefile
+
+  Users:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey: id
+      TableName: Users
+  Posts:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey: id
+      TableName: Posts
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
