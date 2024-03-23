@@ -25,14 +25,26 @@ sequenceDiagram
     Bob-->>John: Jolly good!
 ```
 
+## DB Diagrams
+### Tables
+```mermaid
+classDiagram
+User : int id
+User : str username
+User : str email
+User : str password
+User : str friends
+Post : int id
+Post : str title
+Post : str content
+Post : int user_id
+```
 
-## DB Entity Relationship Diagram 
+### Entity Relationship Diagram 
 
 ```mermaid
 erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+    USER ||--o{ POSTS : creates
 ```
 
 ## User Journey Diagram
