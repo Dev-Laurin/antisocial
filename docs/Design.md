@@ -21,7 +21,7 @@ sequenceDiagram
         John->>John: Is Bob a friend? Or just a co-worker?
     end
     Anti->>John: I know that. If I saw you browsing LinkedIn I would have assumed you were fired.
-    Anti->>John: You have no chats with Bob on your discord, which you frequent.
+    Anti->>John: You have no chats with Bob on your Discord, which you frequent.
     John-->>Anti: Yes, but I do talk to Bob at work daily. He's vital to my everyday.
     Anti->>John: Do you only talk about work?
     John-->>Anti: Y-Yes...
