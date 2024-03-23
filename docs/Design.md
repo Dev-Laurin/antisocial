@@ -1,3 +1,13 @@
+- [ideas](#ideas)
+- [Example App usage Diagram](#example-app-usage-diagram)
+- [DB Diagrams](#db-diagrams)
+  - [Tables](#tables)
+  - [Entity Relationship Diagram](#entity-relationship-diagram)
+- [Development Process](#development-process)
+  - [Branching](#branching)
+  - [Categories](#categories)
+
+
 ## ideas
 * instead of encouraging following and connecting with more people, the site encourages you to dis-associate with people through recommendations (you haven't DM'd this person in awhile, perhaps you should drop them from your friends list).
 * Categories: Stranger, Acquaintance, Friend

@@ -25,9 +25,24 @@ Resources:
       Environment:
         Variables:
           PARAM1: VALUE
+      Policies:
+      - DynamoDBCrudPolicy:
+          TableName: Users
+      - DynamoDBCrudPolicy:
+          TableName: Posts
     Metadata:
       BuildMethod: makefile
       SamResourceId: HelloWorldFunction
+  Users:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      PrimaryKey: id
+      TableName: Users
+  Posts:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      PrimaryKey: id
+      TableName: Posts
 Outputs:
   HelloWorldAPI:
     Description: API Gateway endpoint URL for Prod environment for First Function
